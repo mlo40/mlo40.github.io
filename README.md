@@ -1,2 +1,2 @@
 # emlo40site
-a badly made site https://emlo40.com
+the base of my badly made site https://emlo40.com

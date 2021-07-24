@@ -1,0 +1,90 @@
+@font-face {
+font-family: "raster";
+src: url("https://emlo40.com/raster.ttf") format("ttf"),
+}
+.btn-group .button {
+    	background-color: #green;
+    	border: none;
+    	color: green;
+    	padding: 15px 128px;
+    	
+    	text-decoration: none;
+    	font-size: 30px;
+		font-family:'raster';
+    	cursor: pointer;
+    	float: left;
+}
+.btn-group .button:hover {
+    	background-color: #3e8e41;
+}
+.sbtn .button {
+    	background-color: #green;
+    	border: none;
+    	color: green;
+    	text-decoration: none;
+    	font-size: 30px;
+		font-family:'raster';
+    	cursor: pointer;
+}
+.sbtn .button:hover {
+    	background-color: #3e8e41;
+}
+body {
+		background-image: url('https://emlo40.com/wp-content/channels4_banner.png');
+		background-position: center;
+  		background-color: black;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-size: cover;
+}
+h1 {
+		font-family:'raster';
+		font-weight: bold;
+		padding: 10px;
+		font-size: 40px;
+		color: green;
+}
+p {
+   		font-size: 40px;
+    	font-weight: bold;
+		font-family:'raster';
+    	float: bottom;
+		color: green;
+}
+.bord {
+		background: rgba(0, 0, 0, 0.9);
+		border-style: double;
+		border-color: green;
+		border-width: 10px;
+}
+
+.pixel {
+		image-rendering: pixelated;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: crisp-edges;
+}
+.contain {
+		display: grid;
+		grid-row-gap: 50px;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto;
+		padding: 5px;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.item2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.item3 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}

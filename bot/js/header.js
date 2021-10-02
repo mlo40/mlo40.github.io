@@ -3,5 +3,6 @@ document.write(`
 <a href="index.html" class="button">Main</a>
 <a href="policy.html" class="button">Policy</a>
 <a href="terms.html" class="button">Terms && services</a>
+<a href="dash.html" class="button">Dash</a>
 </div>
 `);

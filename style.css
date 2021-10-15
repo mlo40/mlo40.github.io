@@ -1,6 +1,6 @@
 @font-face {
 font-family: "raster";
-src: url("https://emlo40.com/raster.ttf") format("ttf"),
+src: url("raster.ttf") format("ttf"),
 }
 .btn-group .button {
     	background-color: #green; /* Green #4CAF50 */
@@ -30,7 +30,7 @@ src: url("https://emlo40.com/raster.ttf") format("ttf"),
 		image-rendering: crisp-edges;
 }
 body {
-		background-image: url('https://emlo40.com/wp-content/themes/mlo3/channels4_banner.png');
+		background-image: url("wp-content/channels4_banner.png");
 		background-position: center;
   		background-color: black;
     	background-repeat: no-repeat;
@@ -55,6 +55,7 @@ p {
 		border-style: double;
 		border-color: green;
 		border-width: 10px;
+		border-radius: 5px;
 }
 .ggcontain {
 		display: grid;

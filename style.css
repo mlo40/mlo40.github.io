@@ -1,9 +1,37 @@
+
 @font-face {
-font-family: "raster";
-src: url("raster.ttf") format("ttf"),
+    font-family: 'rasterregular';
+    src: url('fonts/raster-webfont.woff2') format('woff2'),
+         url('fonts/raster-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+body {
+	background-image: url("wp-content/channels4_banner.png");
+	background-position: center;
+	  background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family:'rasterregular';
+}
+
+h1 {
+	font-weight: bold;
+	padding: 10px;
+	font-size: 40px;
+}
+p {
+	   font-size: 40px;
+	font-weight: bold;
+	float: bottom;
+	color: green;
+}
+
 .btn-group .button {
-    	background-color: #green; /* Green #4CAF50 */
+    	/* background-color: ; Green #4CAF50 */
     	border: none;
 		font-weight: bold;
     	color: green;
@@ -11,7 +39,6 @@ src: url("raster.ttf") format("ttf"),
     	text-align: center;
     	text-decoration: none;
     	font-size: 30px;
-		font-family:'raster';
     	cursor: pointer;
     	float: left;
 }
@@ -29,27 +56,7 @@ src: url("raster.ttf") format("ttf"),
 		image-rendering: -moz-crisp-edges;
 		image-rendering: crisp-edges;
 }
-body {
-		background-image: url("wp-content/channels4_banner.png");
-		background-position: center;
-  		background-color: black;
-    	background-repeat: no-repeat;
-    	background-attachment: fixed;
-    	background-size: cover;
-}
-h1 {
-		font-family:'raster';
-		font-weight: bold;
-		padding: 10px;
-		font-size: 40px;
-}
-p {
-   		font-size: 40px;
-    	font-weight: bold;
-		font-family:'raster';
-    	float: bottom;
-		color: green;
-}
+
 .cwhite {
 		background: rgba(0, 0, 0, 0.9);
 		border-style: double;

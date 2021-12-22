@@ -1,85 +1,124 @@
-
 @font-face {
     font-family: 'rasterregular';
-    src: url('fonts/raster-webfont.woff2') format('woff2'),
-         url('fonts/raster-webfont.woff') format('woff');
+    src: url('fonts/raster-webfont.woff2') format('woff2'), url('fonts/raster-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+* {
+    padding: 0;
+    margin: 0;
 }
 
 body {
-	background-image: url("wp-content/channels4_banner.png");
-	background-position: center;
-	  background-color: black;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	font-family:'rasterregular';
+    background-image: url("wp-content/channels4_banner.png");
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'rasterregular';
 }
 
 h1 {
-	font-weight: bold;
-	padding: 10px;
-	font-size: 40px;
+    font-weight: bold;
+    color: green;
+    padding: 10px;
+    font-size: 40px;
 }
+
 p {
-	   font-size: 40px;
-	font-weight: bold;
-	float: bottom;
-	color: green;
+    font-weight: bold;
+    float: bottom;
+    color: green;
+}
+
+header {
+    grid-area: header;
+    margin-top: 20px;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding: 5px;
+    grid-template-areas: " .socials ."
+        "link-twith link-twitter link-steam";
+    justify-items: center;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.link-twith {
+    grid-area: link-twith;
+}
+
+.link-twitter {
+    grid-area: link-twitter;
+}
+
+.link-steam {
+    grid-area: link-steam;
 }
 
 .btn-group .button {
-    	/* background-color: ; Green #4CAF50 */
-    	border: none;
-		font-weight: bold;
-    	color: green;
-    	padding: 15px 128px;
-    	text-align: center;
-    	text-decoration: none;
-    	font-size: 30px;
-    	cursor: pointer;
-    	float: left;
+    border: none;
+    font-weight: bold;
+    color: green;
+    padding: 15px 128px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    float: left;
 }
 
 .btn-group .button:hover {
-    	background-color: #3e8e41;
-}
-.social {
-		background-repeat: no-repeat;
-		background-size: contain;
-		border-radius: 50%;
-}
-.pixel {
-		image-rendering: pixelated;
-		image-rendering: -moz-crisp-edges;
-		image-rendering: crisp-edges;
+    background-color: #3e8e41;
 }
 
-.cwhite {
-		background: rgba(0, 0, 0, 0.9);
-		border-style: double;
-		border-color: green;
-		border-width: 10px;
-		border-radius: 5px;
+.social {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
 }
-.ggcontain {
-		display: grid;
-		grid-row-gap: 50px;
-		grid-template-columns: auto auto auto;
-		grid-template-rows: auto auto auto;
-		padding: 5px;
+
+.pixel {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
-.item1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
+
+.terminal {
+    background: rgba(0, 0, 0, 0.9);
+    border-style: double;
+    border-color: green;
+    border-width: 10px;
+    border-radius: 5px;
 }
+
+.gg-contain {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    grid-template-areas: "header header header"
+        "atricle atricle atricle"
+        "footer footer footer"
+}
+
+
 .item2 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
+    grid-area: atricle;
+    padding:15px;
+}
+
+.hell_on_hell{
+    display: none;
 }

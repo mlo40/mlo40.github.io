@@ -7,12 +7,11 @@
 
 * {
     padding: 0;
-    margin: 0;
+    margin: 3;
 }
 
 body {
     background-image: url("wp-content/channels4_banner.png");
-    background-position: center;
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,20 +40,20 @@ header {
 footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 4% 4% 4%;
     grid-template-rows: auto auto;
-    justify-content: center;
     padding: 5px;
     grid-template-areas: " .socials ."
         "link-twith link-twitter link-steam";
-    justify-items: center;
 }
 
 .socials {
+	
     grid-area: socials;
 }
 
 .link-twith {
+	
     grid-area: link-twith;
 }
 
@@ -107,9 +106,9 @@ footer {
     grid-row-gap: 50px;
     grid-template-columns: 5% auto 5%;
     grid-template-rows: auto auto auto;
-    justify-items: center;
+    /*justify-items: center;*/
     grid-template-areas: "header header header"
-        "atricle atricle atricle"
+        "0 atricle 2"
         "footer footer footer"
 }
 

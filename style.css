@@ -121,3 +121,8 @@ footer {
 .hell_on_hell{
     display: none;
 }
+@media screen and (max-width: 1100px) {
+	footer {
+		 grid-template-columns: 10% 10% 10%;
+	}
+}

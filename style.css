@@ -43,8 +43,8 @@ footer {
     grid-template-columns: 4% 4% 4%;
     grid-template-rows: auto auto;
     padding: 5px;
-    grid-template-areas: " .socials ."
-        "link-twith link-twitter link-steam";
+    grid-template-areas: ". socials . ."
+        "link-twith link-twitter link-steam link-github";
 }
 
 .socials {
@@ -63,6 +63,10 @@ footer {
 
 .link-steam {
     grid-area: link-steam;
+}
+
+.link-github {
+    grid-area: link-github;
 }
 
 .btn-group .button {

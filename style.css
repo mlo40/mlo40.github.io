@@ -23,13 +23,14 @@ h1 {
     font-weight: bold;
     color: green;
     padding: 10px;
-    font-size: 40px;
+    font-size: 250%;
 }
 
 p {
     font-weight: bold;
     float: bottom;
     color: green;
+	font-size: 130%;
 }
 
 header {
@@ -45,7 +46,7 @@ sidebar {
     padding: 5px;
     grid-template-areas:
 		"socials"
-        	"link-twith"
+        "link-twith"
 		"link-twitter"
 		"link-steam"
 		"link-github";
@@ -80,7 +81,7 @@ sidebar {
     padding: 15px 128px;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 200%;
     cursor: pointer;
     float: left;
 }
@@ -130,9 +131,15 @@ sidebar {
 }
 @media screen and (max-width: 1100px) {
 	.gg-contain {
-    grid-template-columns: 20% auto 5%;
+    		grid-template-columns: 20% auto 5%;
 	}
 	sidebar {
-		 grid-template-rows: 12% 12% 12% 12% 12%;
+		grid-template-rows: 12% 12% 12% 12% 12%;
+	}
+	p {
+		font-size: 100%;
+	}
+	h1 {
+    		font-size: 200%;
 	}
 }

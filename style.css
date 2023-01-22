@@ -37,14 +37,18 @@ header {
     margin-top: 20px;
 }
 
-footer {
-    grid-area: footer;
+sidebar {
+    grid-area: sidebar;
     display: grid;
-    grid-template-columns: 4% 4% 4%;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 10% 10% 10% 10%;
     padding: 5px;
-    grid-template-areas: ". socials . ."
-        "link-twith link-twitter link-steam link-github";
+    grid-template-areas:
+		"socials"
+        	"link-twith"
+		"link-twitter"
+		"link-steam"
+		"link-github";
 }
 
 .socials {
@@ -108,12 +112,11 @@ footer {
 .gg-contain {
     display: grid;
     grid-row-gap: 50px;
-    grid-template-columns: 5% auto 5%;
+    grid-template-columns: 8% auto 5%;
     grid-template-rows: auto auto auto;
     /*justify-items: center;*/
     grid-template-areas: "header header header"
-        "0 atricle 2"
-        "footer footer footer"
+        "sidebar atricle atricle"
 }
 
 
@@ -126,7 +129,10 @@ footer {
     display: none;
 }
 @media screen and (max-width: 1100px) {
-	footer {
-		 grid-template-columns: 10% 10% 10%;
+	.gg-contain {
+    grid-template-columns: 20% auto 5%;
+	}
+	sidebar {
+		 grid-template-rows: 12% 12% 12% 12% 12%;
 	}
 }

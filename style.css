@@ -22,15 +22,15 @@ body {
 h1 {
     font-weight: bold;
     color: green;
-    padding: 10px;
-    font-size: 250%;
+    padding: 0.5%;
+    font-size: 240%;
 }
 
 p {
     font-weight: bold;
     float: bottom;
     color: green;
-	font-size: 130%;
+	font-size: 160%;
 }
 
 header {
@@ -39,11 +39,16 @@ header {
 }
 
 sidebar {
+	grid-area: sidebar;
+    padding: 10%;
+}
+/*
+oldsidebar {
     grid-area: sidebar;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10% 10% 10% 10% 10%;
-    padding: 5px;
+    grid-template-rows: auto auto auto auto auto;
+    padding: 10%;
     grid-template-areas:
 		"socials"
         "link-twith"
@@ -53,12 +58,10 @@ sidebar {
 }
 
 .socials {
-	
     grid-area: socials;
 }
 
 .link-twith {
-	
     grid-area: link-twith;
 }
 
@@ -73,12 +76,12 @@ sidebar {
 .link-github {
     grid-area: link-github;
 }
-
+*/
 .btn-group .button {
     border: none;
     font-weight: bold;
     color: green;
-    padding: 15px 128px;
+    padding: 1% 1%;
     text-align: center;
     text-decoration: none;
     font-size: 200%;
@@ -109,21 +112,22 @@ sidebar {
     border-width: 10px;
     border-radius: 5px;
 }
-
+.aclass {
+	
+}
 .gg-contain {
     display: grid;
-    grid-row-gap: 50px;
-    grid-template-columns: 8% auto 5%;
+    grid-row-gap: 2%;
+    grid-template-columns: 10% auto auto;
     grid-template-rows: auto auto auto;
     /*justify-items: center;*/
     grid-template-areas: "header header header"
         "sidebar atricle atricle"
 }
 
-
-.item2 {
+.item {
     grid-area: atricle;
-    padding:15px;
+    padding:5%;
 }
 
 .hell_on_hell{

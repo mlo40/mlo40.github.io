@@ -6,5 +6,5 @@ document.write(`
 <meta name="language" content="English">
 <meta name="revisit-after" content="5 days">
 <meta name="author" content="emlo40">
-<meta name="coder" content="emlo40, theendercore">
+<meta name="coder" content="emlo40">
 `);

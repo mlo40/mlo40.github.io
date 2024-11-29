@@ -14,10 +14,9 @@ body {
     background-image: url("wp-content/channels4_banner.png");
     background-color: black;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     font-family: 'rasterregular';
-    box-shadow: 0 0 1% 1% black inset;
+    box-shadow: 0 0 8px 8px black inset;
 }
 
 h1 {

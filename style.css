@@ -17,6 +17,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: 'rasterregular';
+    box-shadow: 0 0 1% 1% black inset;
 }
 
 h1 {

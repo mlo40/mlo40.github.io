@@ -11,14 +11,10 @@
 }
 
 html {
-  --border-width: 10px;
-  padding: var(--border-width);
-  &:before {
     content: '';
     position: fixed;
     inset: 0;
     box-shadow: 0 0 8px 8px black inset;
-  }
 }
 
 body {

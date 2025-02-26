@@ -75,6 +75,11 @@ sidebar {
     image-rendering: crisp-edges;
 }
 
+.ran{
+    flex-direction: column; 
+    display: flex;
+}
+
 .terminal {
     background: rgba(0, 0, 0, 0.9);
     border-style: double;
